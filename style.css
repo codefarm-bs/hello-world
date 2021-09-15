@@ -1,0 +1,53 @@
+.wrap {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.wrap .header {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.wrap .header h1 {
+    font-size: 75px;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 800;
+    color: #29263b;
+}
+
+.wrap .header img {
+    width: 100px;
+    height: 70px;
+    padding-right: 25px;
+}
+
+.wrap .content {
+    direction: rtl;
+    font-family: Tahoma, serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap .content p {
+    font-size: 24px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #e8e8e8;
+    color: #29263b;
+}
+
+.wrap .content a {
+    font-size: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+    color: #29263b;
+}
+
+.wrap .content a:hover {
+    color: #17e97b;
+}
