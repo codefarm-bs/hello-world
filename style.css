@@ -1,3 +1,15 @@
+* {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
 .wrap {
     padding-top: 80px;
     display: flex;
@@ -36,18 +48,58 @@
 
 .wrap .content p {
     font-size: 24px;
-    padding-bottom: 32px;
+    padding-bottom: 36px;
     border-bottom: 2px solid #e8e8e8;
     color: #29263b;
 }
 
-.wrap .content a {
-    font-size: 20px;
+.wrap .content div {
     padding-top: 20px;
+    display: block;
+}
+
+.wrap .content div a {
+    font-size: 20px;
     text-decoration: none;
     color: #29263b;
 }
 
-.wrap .content a:hover {
+.wrap .content div a:hover {
     color: #17e97b;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+}
+
+.hover {
+    background-color: #17e97b;
+    opacity: 0.1;
+}
+
+.cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
 }
